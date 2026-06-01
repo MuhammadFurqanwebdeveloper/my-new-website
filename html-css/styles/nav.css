@@ -1,0 +1,112 @@
+/* common nav styles */
+.navigation-wrapper {
+    height: 190px;
+    background-color: #11122b;
+    color: #cbcbcb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 100px;
+}
+
+                                                            /* left-column */
+.navigation-wrapper > .left-column {
+    display: flex;
+    align-items: center;
+}
+.navigation-wrapper > .left-column > .call-icon img {
+    margin-right: 15px;
+    width: 30px;
+}
+.navigation-wrapper > .left-column > .contact-time-wrapper {
+    color: #858585;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 8px;
+}
+.navigation-wrapper > .left-column > .contact-time-wrapper > .time {
+    font-family: Ubuntu Condensed;
+    font-size: 0.8em;
+}
+.navigation-wrapper > .left-column > .contact-time-wrapper > .phone {
+    font-family: Roboto;
+    font-size: medium;
+    font-weight: 400;
+}
+.navigation-wrapper > .left-column > .contact-time-wrapper > .phone a {
+    color: rgba(212, 212, 212, 0.812);
+    text-decoration: none;
+}
+.navigation-wrapper > .left-column > .contact-time-wrapper > .phone a:hover{
+    color: #cea135;
+}
+
+                                                           /* center column */
+.navigation-wrapper > .center-column > .webpages {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 42px;
+    width: 500px;
+}
+/* logo wrapper */
+.navigation-wrapper > .center-column > .webpages > .logo {
+    display: flex;
+    justify-content: center;
+}
+.navigation-wrapper > .center-column > .webpages > .logo img {
+    width: 216px; 
+}
+/* .links-wrapper */
+.navigation-wrapper > .center-column > .webpages > .links-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ /* .nav-link */
+.navigation-wrapper > .center-column > .webpages > .links-wrapper > .nav-link {
+    width: 70px;
+    align-items: center;
+}
+.navigation-wrapper > .center-column > .webpages > .links-wrapper > .nav-link a {
+    font-family: sans-serif;
+    color: #cbcbcb;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.navigation-wrapper > .center-column > .webpages > .links-wrapper > .nav-link a:hover {
+    color: #cea135;
+    letter-spacing: 2px;
+}
+
+                                                           /* .right-column */
+.navigation-wrapper > .right-column {
+    display: flex;
+    align-items: center;
+}
+.navigation-wrapper > .right-column:hover {
+    color: #cea135;
+}
+.navigation-wrapper > .right-column > .pin-icon img {
+    margin-left: 15px;
+    width: 30px;
+}
+ /* .address-wrapper */
+.navigation-wrapper > .right-column > .address-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2px;
+    font-family: Ubuntu Condensed;
+    font-weight: 10em;
+    font-style: normal;
+    text-align: right;
+}
+.navigation-wrapper > .right-column > .address-wrapper a {
+    color: #858585;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: 0.5s;
+}
+.navigation-wrapper > .right-column > .address-wrapper a:hover {
+    color: #cea135;
+}
+

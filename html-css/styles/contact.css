@@ -1,0 +1,165 @@
+/* common-nav-styles-about */
+.skewed-header {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+.skewed-header > .header-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transform: skewY(-6deg);
+    transform-origin: top left;
+    filter: brightness(50%);
+}
+.skewed-header > .skewed-header-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+.skewed-header > .skewed-header-wrapper > .skewed-header-content {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skewed-header > .skewed-header-wrapper > .skewed-header-content > .heading-wrapper {
+    background-color: #cea135;
+    color: #11122b;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    width: 175px;
+    padding: 10px;
+    text-align: center;
+}
+.skewed-header > .skewed-header-wrapper > .skewed-header-content > .links-wrapper > .nav-link a {
+    color: #cbcbcb;
+    font-family: "Ubuntu Condensed", sans-serif;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.skewed-header > .skewed-header-wrapper > .skewed-header-content > .links-wrapper > .nav-link a:hover {
+    color: #cea135;
+    letter-spacing: 2px;
+}
+.contact-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-wrapper {
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 100px;
+}
+.contact-page-container > .grid-wrapper > .sidebar-wrapper > .sidebar-logo img {
+    width: 240px;
+    margin-bottom: 20px;
+}
+.contact-page-container > .grid-wrapper > .sidebar-wrapper > .details-wrapper img {
+    width: 20px;
+    height: 20px;
+}
+.contact-page-container > .grid-wrapper > .sidebar-wrapper > .details-wrapper {
+    font-family: "Ubuntu-Condenced", sans-serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+.form input {
+    font-size: 1.5em;
+    font-family: "Ubuntu-Condenced", sans-serif;
+    color: #11122b;
+    padding: 1.5em 2em;
+    border-radius: 2px;
+    border: none;
+    border-bottom: 3px solid #11122b;
+    width: 100%;
+    display: block;
+    transition: all 0.3s;
+}
+.form input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #cea135;
+}
+.form textarea {
+    margin-top: 20px;
+    width: 100%;
+    height: 250px;
+    border-radius: 3px;
+    border: 3px solid #11122b;
+    font-size: 1.5em;
+    font-family: "Ubuntu-Condenced", sans-serif;
+    color: #11122b;
+    padding: 1.5em 2em;
+}
+.form textarea:focus {
+    outline: none;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+    border: 3px solid #cea135;
+}
+.form input::-webkit-input-placeholder, .form textarea::-webkit-input-placeholder {
+    color: #11122b;
+}
+.form input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+.form textarea:focus::-webkit-input-placeholder{
+    color: transparent;
+}
+.form > .form-group {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.btn {
+    background-color: #cea135;
+    color: #11122b;
+    font-size: 1.25em;
+    padding: 10px 25px;
+    border: 1px solid #cea135;
+    outline: none;
+    transition: all 0.3s;
+}
+.btn:active {
+    box-shadow: inset  5px 5px 30px rgba(0, 0, 0, 0.4);
+}
+.form label {
+    font-size: 1.25em;
+    font-family: "Ubuntu-Condenced", sans-serif;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: 0.3s;
+    color: #cea135;
+    visibility: hidden;
+    opacity: 0;
+}
+.form input:focus + label {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(1rem);
+}
+.form textarea:focus + label {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(1rem);
+}
+.centered-btn-wrapper {
+    display: flex;
+    justify-content: center;
+}

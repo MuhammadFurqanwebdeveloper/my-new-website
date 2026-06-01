@@ -1,0 +1,79 @@
+/* background-image-section */
+.background-image-section {
+    background-image: url(../images/backgrounds/fries-hero-bg.jpg);
+    padding: 100px;
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.background-image-section > .top-heading {
+    padding: 1px 20px;
+    background-color: #11122b;
+    color: #cbcbcb;
+    width: 290px;
+    border-radius: 2px;
+}
+.background-image-section > .bottom-heading {
+    padding: 1px 20px;
+    margin-top: 15px;
+    background-color: #cea135;
+    color: #11122b;
+    width: 140px;
+    border-radius: 2px;
+}
+/* services section */
+.services-wrapper {
+    height: 400px;
+    background-image: url(../images/backgrounds/fries-multiply-bg.jpg);
+    background-color: gold;
+    border-top: 5px solid white;
+    color: #11122b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu Condensed;
+    box-shadow: inset 0px -26px 79px -8px rgba(0, 0, 0, 0.58);
+}
+.services-wrapper > .columns-wrapper {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+.services-wrapper > .columns-wrapper > .column {
+    padding: 20px;
+    margin: 42px;
+    text-align: center;
+    border-bottom: 5px solid transparent;
+    border-right: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-radius: 20px;
+    transition: 1s;
+}
+.services-wrapper > .columns-wrapper > .column img {
+    width: 100px;
+}
+.services-wrapper > .columns-wrapper > .column:hover {
+    border-bottom: 5px solid #11122b;
+    border-right: 2px solid #11122b;
+    border-left: 2px solid #11122b;
+}
+.services-wrapper > .columns-wrapper > .column :nth-child(1) {
+    font-size: 1.2em;
+    font-weight: 5px;
+}
+.services-wrapper > .columns-wrapper > .column :nth-child(2) {
+    font-size: x-large;
+    font-weight: 900;
+    height: 50px;
+    transition: 1s;
+}
+.services-wrapper > .columns-wrapper > .column :nth-child(2):hover {
+    letter-spacing: 1px;
+}
+.services-wrapper > .columns-wrapper > .column :nth-child(3) {
+    letter-spacing: 2px;
+}
+
+
